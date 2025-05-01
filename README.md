@@ -13,7 +13,7 @@
 
 ---
 
-## Project Screenshots
+## Project Outputs
 
 ### Welcome Page
 
