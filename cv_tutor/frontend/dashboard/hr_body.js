@@ -73,7 +73,7 @@ document.getElementById("analyze_existing").addEventListener("click", async () =
 
         if (result && result.result) {
             // Redirect to response.html with the result as a query parameter
-            window.location.href = `/cv_tutor/frontend/response/Show%20Match/showmatch.html?result=${encodeURIComponent(result.result)}`;
+            window.location.href = `/ankon35-AI-Olympiad_CV-Tutor/cv_tutor/frontend/response/Show%20Match/showmatch.html?result=${encodeURIComponent(result.result)}`;
         } else {
             alert("No valid result returned.");
         }
@@ -117,7 +117,7 @@ document.getElementById("skills_suggestion").addEventListener("click", async () 
             const encodedResult = encodeURIComponent(result.result);
 
             // Ensure the URL is correct and log the full URL
-            const redirectUrl = `/cv_tutor/frontend/response/Skills%20Suggestions/skill.html?result=${encodedResult}`;
+            const redirectUrl = `/ankon35-AI-Olympiad_CV-Tutor/cv_tutor/frontend/response/Skills%20Suggestions/skill.html?result=${encodedResult}`;
             console.log("Redirection URL:", redirectUrl);
 
             // Now perform the redirection
@@ -167,7 +167,7 @@ document.getElementById("project_suggestion").addEventListener("click", async ()
             const encodedResult = encodeURIComponent(result.result);
 
             // Ensure the URL is correct and log the full URL
-            const redirectUrl = `/cv_tutor/frontend/response/Project%20Suggestion/Psuggestion.html?result=${encodedResult}`;
+            const redirectUrl = `/ankon35-AI-Olympiad_CV-Tutor/cv_tutor/frontend/response/Project%20Suggestion/Psuggestion.html?result=${encodedResult}`;
             console.log("Redirection URL:", redirectUrl);
 
             // Now perform the redirection
@@ -219,7 +219,7 @@ document.getElementById("draft_cover_letter").addEventListener("click", async ()
             const encodedResult = encodeURIComponent(result.result);
 
             // Ensure the URL is correct and log the full URL
-            const redirectUrl = `/cv_tutor/frontend/response/Cover%20Letter/coverLetter.html?result=${encodedResult}`;
+            const redirectUrl = `/ankon35-AI-Olympiad_CV-Tutor/cv_tutor/frontend/response/Cover%20Letter/coverLetter.html?result=${encodedResult}`;
             console.log("Redirection URL:", redirectUrl);
 
             // Now perform the redirection
@@ -268,7 +268,7 @@ document.getElementById("draft_email").addEventListener("click", async () => {
             const encodedResult = encodeURIComponent(result.result);
 
             // Ensure the URL is correct and log the full URL
-            const redirectUrl = `/cv_tutor/frontend/response/draftEmail/draftEmail.html?result=${encodedResult}`;
+            const redirectUrl = `/ankon35-AI-Olympiad_CV-Tutor/cv_tutor/frontend/response/draftEmail/draftEmail.html?result=${encodedResult}`;
             console.log("Redirection URL:", redirectUrl);
 
             // Now perform the redirection
@@ -319,7 +319,7 @@ document.getElementById("question_generation").addEventListener("click", async (
             const encodedResult = encodeURIComponent(result.result);
 
             // Ensure the URL is correct and log the full URL
-            const redirectUrl = `/cv_tutor/frontend/response/Question%20Generator/questionGen.html?result=${encodedResult}`;
+            const redirectUrl = `/ankon35-AI-Olympiad_CV-Tutor/cv_tutor/frontend/response/Question%20Generator/questionGen.html?result=${encodedResult}`;
             console.log("Redirection URL:", redirectUrl);
 
             // Now perform the redirection

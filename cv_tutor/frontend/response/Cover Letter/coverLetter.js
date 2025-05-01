@@ -1,6 +1,6 @@
 // Function to go back to the previous page
 function goBack() {
-    window.location.href = '/cv_tutor/frontend/dashboard/hr_body.html';  // Update URL based on your actual structure
+    window.location.href = '/ankon35-AI-Olympiad_CV-Tutor/cv_tutor/frontend/dashboard/hr_body.html';  // Update URL based on your actual structure
 }
 
 // Function to extract query parameters from the URL
