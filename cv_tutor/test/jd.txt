@@ -1,0 +1,25 @@
+Position: Growth Data Analyst
+
+Job Type: Full-Time
+
+
+
+Responsibilities:
+
+Analyze user data to identify growth opportunities and inform product development strategies.
+Develop and maintain dashboards and reports to track key performance indicators (KPIs) and metrics.
+Conduct A/B tests and other experiments to optimize user acquisition, retention, and engagement.
+Collaborate with cross-functional teams, including product, marketing, and engineering, to implement data-driven insights and strategies.
+Provide actionable recommendations based on data analysis to drive business growth and improve user experience.
+Stay up-to-date with industry trends and best practices in data analysis and growth hacking.
+
+
+Qualifications:
+
+Bachelor’s degree in Data Science, Statistics, Computer Science, or a related field.
+Minimum of 3-5 years of experience in data analysis, with a focus on growth and user engagement.
+Proficiency in data analysis tools such as SQL, Python, R, or similar.
+Strong understanding of statistical analysis and data visualization techniques.
+Experience with A/B testing and other experimental methodologies.
+Excellent communication and collaboration skills, with the ability to work effectively in a remote team environment.
+A portfolio showcasing your best work, highlighting your ability to drive growth through data analysis.

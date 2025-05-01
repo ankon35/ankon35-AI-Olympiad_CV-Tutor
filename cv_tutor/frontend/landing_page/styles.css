@@ -1,0 +1,124 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body setup */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(45deg, #205072, #329D9C, #7BE495, #CFF4D2);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    box-sizing: border-box;
+}
+
+/* Container setup */
+.container {
+    text-align: center;
+    padding: 0 15px;
+}
+
+/* Heading text style */
+h1 {
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 20px;
+    font-family: 'Courier New', Courier, monospace; /* Typewriter font */
+    white-space: nowrap;
+    overflow: hidden; /* Hide text until it's typed */
+    border-right: 3px solid #333; /* Cursor effect */
+    padding-right: 5px; /* Space between text and cursor */
+    width: 0; /* Start with zero width */
+    animation: typing 5s steps(40) 1s infinite, blink 0.75s step-end infinite; /* Infinite loop */
+}
+
+/* Button style */
+.start-button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.start-button:hover {
+    transform: scale(1.1);
+    background-color: white;
+    color: black;
+}
+
+.start-button:active {
+    transform: scale(1);
+}
+
+/* Keyframes for typewriter effect */
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    25% {
+        width: 25%;
+    }
+    50% {
+        width: 50%;
+    }
+    75% {
+        width: 75%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+/* Keyframes for the blinking cursor */
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+/* Responsive Design - Media Queries */
+
+/* For Tablets (Landscape and Portrait) */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem; /* Smaller font size for tablets */
+    }
+
+    .start-button {
+        padding: 12px 24px; /* Adjust button size */
+        font-size: 1.1rem;
+    }
+}
+
+/* For Mobile Devices (Max Width: 480px) */
+@media (max-width: 480px) {
+    body {
+        padding: 10px; /* Reduce body padding on smaller screens */
+    }
+
+    .container {
+        padding: 0 10px; /* Adjust container padding */
+    }
+
+    h1 {
+        font-size: 25px; /* Smaller font size for mobile */
+    }
+
+    .start-button {
+        padding: 10px 20px; /* Further reduce button size */
+        font-size: 1rem;
+    }
+}

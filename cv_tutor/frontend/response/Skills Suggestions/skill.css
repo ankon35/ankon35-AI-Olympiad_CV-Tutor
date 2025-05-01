@@ -1,0 +1,170 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body setup */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(45deg, #205072, #329D9C, #7BE495, #CFF4D2);background-color: #e5f2f7;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+
+/* Back button styling */
+.back-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+.back-button:hover {
+    background-color: #45a049;
+}
+
+.back-button:active {
+    transform: scale(0.98);
+}
+
+/* Container Setup */
+.container {
+    max-width: 1140px;
+    margin: 22px auto;
+    height: auto; /* Allow height to adjust based on content */
+    overflow-y: auto; /* Vertical scrollbar */
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 24px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+/* Main Skills Section */
+.main-skills {
+    display: inline-block; /* Prevent wrapping inside the container */
+    margin-right: 20px;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-align: justify; 
+}
+
+.main-skills h2 {
+    font-size: 1.8rem;
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+.main-skills p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* Viva Questions Section */
+.viva-questions h2 {
+    font-size: 1.8rem;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+.viva-questions .questions {
+    margin-bottom: 20px;
+}
+
+.viva-questions .questions h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.viva-questions .questions ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.viva-questions .questions ul li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+/* Responsive Design - Media Queries */
+
+/* For Tablets (Landscape and Portrait) */
+@media (max-width: 768px) {
+    /* Adjusting the container width for smaller screens */
+    .container {
+        padding: 15px;
+        width: 90%;
+    }
+
+    .main-skills h2,
+    .viva-questions h2 {
+        font-size: 1.5rem;
+    }
+
+    .main-skills p,
+    .viva-questions .questions ul li {
+        font-size: 1rem;
+    }
+
+    .back-button {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+
+    .main-skills {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
+/* For Mobile Devices */
+@media (max-width: 480px) {
+    /* Adjust container width and layout for mobile screens */
+    .container {
+        padding: 10px;
+        width: 100%;
+    }
+
+    
+
+    .main-skills h2,
+    .viva-questions h2 {
+        font-size: 22px;
+        text-align: center;
+        
+    }
+
+    .main-skills p, .viva-questions .questions ul li {
+        font-size: 1rem;
+        /* width: 80%; */
+        /* padding: 10px; */
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .back-button {
+        font-size: 1rem;
+        padding: 8px 12px;
+    }
+}

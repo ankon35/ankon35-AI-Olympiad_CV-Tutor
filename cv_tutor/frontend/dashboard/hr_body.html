@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Analyzer</title>
+    <link rel="stylesheet" href="hr_body.css">
+</head>
+<body>
+    <div class="container" id="hr_body2">
+        <h1>Resume Analyzer</h1>
+
+        <!-- Upload Form -->
+        <form id="upload-form" method="post" enctype="multipart/form-data">
+            <div class="input-section">
+                <label for="job-description">Job Description:</label>
+                <textarea id="job-description" name="job_desc" placeholder="Enter the job description here..."></textarea>
+            </div>
+
+            <div class="input-section">
+                <label for="resume-upload">Upload Resume (PDF):</label>
+                <input type="file" id="resume-upload" name="resumes" accept="application/pdf" multiple>
+            </div>
+
+            <div class="button-section1">
+                <button class="btn" type="submit">Upload Files</button>
+            </div>
+        </form>
+
+        <!-- Other Functionalities -->
+        <br>
+       
+
+        <br>
+
+        <div class="button-section">
+            <button id="analyze_existing" class="smbtn" type="button" onclick="sendAction('show_match')">Show Match</button>
+            <button id="skills_suggestion" class="smbtn" type="button" onclick="sendAction('skills_suggestion')">Skills Suggestion</button>
+            <button id="project_suggestion" class="smbtn" type="button" onclick="sendAction('project_suggestion')">Project Suggestion</button>
+            <button id="draft_cover_letter" class="smbtn" type="button" onclick="sendAction('draft_cover_letter')">Draft Cover Letter</button>
+            <button id="draft_email" class="smbtn" type="button" onclick="sendAction('draft_email')">Draft Email</button>
+            <button id="question_generation" class="smbtn" type="button" onclick="sendAction('question_generation')">Question Generation</button>
+
+            <!-- <button class="smbtn" type="button" onclick="sendAction('skills_suggestion')">Skill Suggestions</button> -->
+            <!-- <button class="smbtn" type="button" onclick="sendAction('project_suggestion')">Project Suggestion</button>
+            <button class="smbtn" type="button" onclick="sendAction('draft_cover_letter')">Cover Letter</button>
+            <button class="smbtn" type="button" onclick="sendAction('draft_email')">Draft Email</button>
+            <button class="smbtn" type="button" onclick="sendAction('question_generation')">Generate Questions</button> -->
+        </div>
+
+        <br><br>
+
+    </div>
+
+    <!-- Loading Animation -->
+    <div id="loading11" style="display: none; margin: 10%;">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 150">
+            <path
+                fill="none"
+                stroke="#FF156D"
+                stroke-width="15"
+                stroke-linecap="round"
+                stroke-dasharray="300 385"
+                stroke-dashoffset="0"
+                d="M275 75c0 31-27 50-50 50-58 0-92-100-150-100-28 0-50 22-50 50s23 50 50 50c58 0 92-100 150-100 24 0 50 19 50 50Z">
+                <animate attributeName="stroke-dashoffset" calcMode="spline" dur="2" values="685;-685" keySplines="0 0 1 1" repeatCount="indefinite"></animate>
+            </path>
+        </svg>
+        <p>Analysing Your CV...</p>
+    </div>
+
+    <!-- Results Table -->
+    <div id="table12" class="container" style="width: 80%; margin: 0 10%; padding: 20px; background-color: #ffffff; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); display: none;">
+        <h1 style="font-size: 2rem; color: #333; text-align: center; margin-bottom: 20px;">Results</h1>
+
+        <div id="results">
+            <table style="width: 100%; border-collapse: collapse; margin-bottom: 20px;">
+                <thead>
+                    <tr>
+                        <th style="padding: 10px; text-align: left; border-bottom: 1px solid #ddd; background-color: #4CAF50; color: white;">Name</th>
+                        <th style="padding: 10px; text-align: left; border-bottom: 1px solid #ddd; background-color: #4CAF50; color: white;">Match</th>
+                        <th style="padding: 10px; text-align: left; border-bottom: 1px solid #ddd; background-color: #4CAF50; color: white;">Action</th>
+                    </tr>
+                </thead>
+                <tbody id="cv-matching-table-body">
+                    <!-- Dynamic Data -->
+                </tbody>
+            </table>
+
+            <button id="extract_trig" 
+                style="padding: 8px 16px; font-size: 14px; cursor: pointer; border: none; border-radius: 4px; background-color: #008CBA; color: white; display: block; margin: 20px auto; transition: background-color 0.3s ease;"
+                onmouseover="this.style.backgroundColor='#007bb5'" 
+                onmouseout="this.style.backgroundColor='#008CBA'">
+                Extract
+            </button>
+
+        </div>
+    </div>
+
+    <!-- External JS -->
+    <script src="hr_body.js"></script>
+</body>
+</html>

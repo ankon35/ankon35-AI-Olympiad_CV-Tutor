@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Analysis Result</title>
+    <link rel="stylesheet" href="showmatch.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <button class="back-button" onclick="goBack()">&#8592; Back</button>
+        
+        
+        <div class="result-header">
+            <h1>Resume Analysis Result</h1>
+            <p>Percentage Match: <span id="percentage" class="percentage">Loading...</span></p>
+            <canvas id="donutChart" width="150" height="150"></canvas>
+        </div>
+    </div>
+    <script src="showmatch.js"></script>
+</body>
+</html>

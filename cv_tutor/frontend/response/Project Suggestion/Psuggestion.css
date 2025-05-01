@@ -1,0 +1,106 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body setup */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(45deg, #205072, #329D9C, #7BE495, #CFF4D2);background-color: #e5f2f7;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+
+
+/* Back button styling */
+.back-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+.back-button:hover {
+    background-color: #45a049;
+}
+
+.back-button:active {
+    transform: scale(0.98);
+}
+
+/* Container Setup */
+.container {
+    max-width: 1140px;
+    margin: 22px auto;
+    height: auto; /* Allow height to adjust based on content */
+    overflow-y: auto; /* Vertical scrollbar */
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 24px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Project Suggestions Section */
+.project-suggestions {
+    margin-top: 30px;
+    text-align: justify; 
+}
+
+.project-suggestions h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.project-suggestions ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.project-suggestions li {
+    background-color: #f4f4f4;
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.project-suggestions li strong {
+    color: #4CAF50; /* Green color for project titles */
+}
+
+/* Responsive Design - Media Queries */
+
+/* For Tablets (Landscape and Portrait) */
+@media (max-width: 768px) {
+    /* Adjusting the container width for smaller screens */
+    .container {
+        padding: 15px;
+        width: 90%;
+    }
+}
+
+/* For Mobile Devices */
+@media (max-width: 480px) {
+    /* Adjust container width and layout for mobile screens */
+    .container {
+        padding: 10px;
+        width: 100%;
+    }
+}
