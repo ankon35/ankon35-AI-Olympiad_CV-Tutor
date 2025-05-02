@@ -3,6 +3,9 @@ def match_prompt(job_desc, resume_text):
     return f"""
     Your task is to match the resume with the job description and provide a score from 0 to 100 based on the match.
     Just give the score, no other text.
+    Here watch the job description and resume carefully and then give the score.
+    The score should be based on the skills, experience, and projects mentioned in the resume. 
+    See the skills in job description and resume and then give the score.
 
     Job Description:
     {job_desc}
@@ -13,7 +16,10 @@ def match_prompt(job_desc, resume_text):
 
 def skills_suggestion_prompt(job_desc, resume_text):
     return f"""
-    Your task is to provide suggestions for improving the resume based on the job description. Tell the missing skills.
+    Your task is to provide suggestions for improving the resume based on the job description. 
+    At first go through the job description thoroughly. Read that nicely and understand it and identify the skills required for the job.
+    Then go through the resume of the candidate. Read that nicely and understand it and identify the skills mentioned in the resume.
+    Identify the missing skills.
     Focus on the skills and experience that are relevant to the job description.
     Tell how the Skills can be earned or improved.
     Also highlight prerequisite required for that skills that are not mentioned in the resume.
