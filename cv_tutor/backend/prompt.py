@@ -40,6 +40,8 @@ def question_generation_prompt(job_desc, resume_text):
     The questions must be standard and should be related to the job description and the skills mentioned in the CV.
     Also ask some advance-level questions based on skills and projects which relate to the job description.
     No need to ask general questions. The total number of questions will be between 10-15.
+    As it is for candidate, also provide the answer to the questions.
+    The answer should be in easy English and should be understandable by the candidate.
 
     Job Description:
     {job_desc}
