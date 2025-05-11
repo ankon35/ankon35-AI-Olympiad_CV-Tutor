@@ -1,4 +1,6 @@
-# CV-Tutor
+# CV-Tutor - Resume and Job Application Assistant
+
+## Practical Demo : https://drive.google.com/file/d/11DN3kHQBzT9bVlBe5OEP7clwuDH97yeN/view?usp=drive_link
 
 **CV-Tutor** is an innovative web application designed to assist users in improving their resumes and cover letters by analyzing them against specific job descriptions. It provides tools for analyzing CVs, suggesting skills and projects, drafting cover letters, and generating interview questions, making it an essential tool for job seekers.
 
